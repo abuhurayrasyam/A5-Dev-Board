@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <link rel="icon" href="pictures/logo.png">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#3752FD]">
+    <header class="bg-[#FFFFFF] rounded-lg mt-5 mx-15">
+        <nav class="container mx-auto flex items-center justify-between px-8 py-5">
+            <div class="flex items-center gap-3">
+                <img src="pictures/logo.png" alt="">
+                <h1 class="text-[25px] text-[#00303C]">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <button class="bg-[#3752FD] rounded-lg p-3 text-[#FFFFFF]">Back to Desk</button>
+        </nav>
+    </header>
+
+    <section class="flex flex-col items-center my-5 mx-15">
+        <h1 class="font-bold mb-3 text-[20px]">Blogs</h1>
+        <section class="flex flex-col gap-5">
+            <div class="bg-[#FFFFFF] rounded-lg py-5">
+                <h1 class="font-bold mx-5">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <p class="text-[#3752FD33]">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <p class="text-[#000000BF] mx-5">In the DOM, elements can be selected using methods such as getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll, and getElementsByName. These methods provide various ways to access and manipulate elements based on their ID, class, tag, CSS selectors, or name attribute.</p>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-lg py-5">
+                <h1 class="font-bold mx-5">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+                <p class="text-[#3752FD33]">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <p class="text-[#000000BF] mx-5">innerHTML allows for reading or setting HTML content, including tags and nested elements, within an element. innerText provides the visible text content, excluding hidden elements, while accounting for CSS styling. textContent retrieves or sets all text content within an element, including hidden elements, but ignores HTML tags and styling.</p>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-lg py-5">
+                <h1 class="font-bold mx-5">Question-3: What is event delegation in the DOM?</h1>
+                <p class="text-[#3752FD33]">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <p class="text-[#000000BF] mx-5">Event delegation in the DOM is a technique where a single event listener is added to a parent element instead of multiple child elements. When an event occurs on a child, it bubbles up to the parent, which handles the event. This improves efficiency and simplifies code management.</p>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-lg py-5">
+                <h1 class="font-bold mx-5">Question-4: What is event bubbling in the DOM?</h1>
+                <p class="text-[#3752FD33]">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <p class="text-[#000000BF] mx-5">Event bubbling in the DOM is a mechanism where an event starts from the target element and propagates upward through its ancestor elements. This means that event handlers for the target element execute first, followed by its parents, grandparents, and so on, allowing multiple elements to respond to a single event.</p>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-lg py-5">
+                <h1 class="font-bold mx-5">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                <p class="text-[#3752FD33]">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <p class="text-[#000000BF] mx-5">In JavaScript, you create elements using document.createElement(), add them with methods like appendChild() or insertBefore(), and remove them using removeChild() or remove(). For example, let div = document.createElement('div'); parent.appendChild(div); parent.removeChild(div); demonstrates creating, adding, and removing a div element.</p>
+            </div>
+        </section>
+    </section>
+    <script src=""></script>
+</body>
+</html>
