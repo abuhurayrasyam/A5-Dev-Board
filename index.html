@@ -17,9 +17,9 @@
             <div class="flex items-center gap-3">
                 <div class="bg-[#F4F7FF] rounded-full flex items-center gap-3 p-3">
                     <img src="pictures/checkbox.png" alt="">
-                    <h1 class="text-[25px] font-bold">23</h1>
+                    <h1 id="task-completed" class="text-[25px] font-bold">23</h1>
                 </div>
-                <img class="bg-[#F4F7FF] rounded-full p-2" src="pictures/theme-btn.png" alt="">
+                <img id="theme-btn" class="bg-[#F4F7FF] rounded-full p-2" src="pictures/theme-btn.png" alt="">
             </div>
         </nav>
     </header>
@@ -31,23 +31,25 @@
                     <img class="bg-[#FFFFFF] rounded-full p-3" src="pictures/checkbox.png" alt="">
                     <div>
                         <p class="text-[14px] text-[#00303C]">Task Assigned</p>
-                        <h1 class="font-bold">06</h1>
+                        <h1 id="task-assigned" class="font-bold">06</h1>
                     </div>
                 </div>
-                <div class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg flex items-center gap-3 pl-8 pr-20 py-5">
-                    <img src="pictures/board.png" alt="">
-                    <h1 class="text-[14px] text-[#FFFFFF]">Discover Something<br>New Today!</h1>
-                </div>
+                <a href="./blog.html">
+                    <div class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg flex items-center gap-3 pl-8 pr-20 py-5">
+                        <img src="pictures/board.png" alt="">
+                        <h1 class="text-[14px] text-[#FFFFFF]">Discover Something<br>New Today!</h1>
+                    </div>
+                </a>
                 <div class="bg-[#F4F7FF] rounded-lg flex items-center gap-3 px-8 py-5">
-                    <img class="bg-[#FFFFFF] rounded-full p-3" src="pictures/calender.png" alt="">
-                    <h1 class="text-[14px] text-[#00303C]">Sun,<br><span class="font-bold">Mar 02 2025</span></h1>
+                    <div class="bg-[#FFFFFF] rounded-full p-3"><img src="pictures/calender.png" alt=""></div>
+                    <h1 id="date" class="text-[14px] text-[#00303C]">Sun,<br><span class="font-bold">Mar 02 2025</span></h1>
                 </div>
             </div>
 
             <h1 class="text-[#3752FD33] my-4">--------------------------------------------------------------------------------------------------------------------------------------</h1>
 
             <div class="flex justify-between gap-3 mx-8">
-                <div class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
+                <div id="card-01" class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
                     <h4 class="bg-[#FFFFFF] rounded-lg p-3 w-[90px] text-[#00303C]">ShopEase</h4>
                     <h1 class="font-bold my-2 text-[#00303C]">Fix Mobile Button Issue</h1>
                     <p class="bg-[#FFFFFF] rounded-lg p-3 text-[#00000080]">Debug using Chrome DevTools, check for overlappi...</p>
@@ -57,10 +59,10 @@
                             <h4 class="text-[#000000BF]">Deadline</h4>
                             <p class="font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
+                        <button class="completed-btn bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
                     </div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
+                <div id="card-02" class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
                     <h4 class="bg-[#FFFFFF] rounded-lg p-3 w-[100px] text-[#00303C]">CloudSync</h4>
                     <h1 class="font-bold my-2 text-[#00303C]">Add Dark Mode</h1>
                     <p class="bg-[#FFFFFF] rounded-lg p-3 text-[#00000080]">Store the user's preference in localStorage, update CSS vari...</p>
@@ -70,10 +72,10 @@
                             <h4 class="text-[#000000BF]">Deadline</h4>
                             <p class="font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
+                        <button class="completed-btn bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
                     </div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
+                <div id="card-03" class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
                     <h4 class="bg-[#FFFFFF] rounded-lg p-3 w-[80px] text-[#00303C]">SwiftPay</h4>
                     <h1 class="font-bold my-2 text-[#00303C]">Optimize Home page </h1>
                     <p class="bg-[#FFFFFF] rounded-lg p-3 text-[#00000080]">Debug using Chrome DevTools, check for overlappi...</p>
@@ -83,13 +85,13 @@
                             <h4 class="text-[#000000BF]">Deadline</h4>
                             <p class="font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
+                        <button class="completed-btn bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
                     </div>
                 </div>
             </div>
 
             <div class="flex justify-between gap-3 mt-5 mx-8">
-                <div class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
+                <div id="card-04" class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
                     <h4 class="bg-[#FFFFFF] rounded-lg p-3 w-[65px] text-[#00303C]">Meta</h4>
                     <h1 class="font-bold my-2 text-[#00303C]">Add new emoji 🤲</h1>
                     <p class="bg-[#FFFFFF] rounded-lg p-3 text-[#00000080]">Debug using Chrome DevTools, check for overlappi...</p>
@@ -99,10 +101,10 @@
                             <h4 class="text-[#000000BF]">Deadline</h4>
                             <p class="font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
+                        <button class="completed-btn bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
                     </div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
+                <div id="card-05" class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
                     <h4 class="bg-[#FFFFFF] rounded-lg p-3 w-[110px] text-[#00303C]">Google LLC</h4>
                     <h1 class="font-bold my-2 text-[#00303C]">Integrate OpenAI API</h1>
                     <p class="bg-[#FFFFFF] rounded-lg p-3 text-[#00000080]">Debug using Chrome DevTools, check for overlappi...</p>
@@ -112,10 +114,10 @@
                             <h4 class="text-[#000000BF]">Deadline</h4>
                             <p class="font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
+                        <button class="completed-btn bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
                     </div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
+                <div id="card-06" class="bg-[#F4F7FF] rounded-lg p-4 w-[500px]">
                     <h4 class="bg-[#FFFFFF] rounded-lg p-3 w-[90px] text-[#00303C]">Glassdoar</h4>
                     <h1 class="font-bold my-2 text-[#00303C]">Improve Job searching</h1>
                     <p class="bg-[#FFFFFF] rounded-lg p-3 text-[#00000080]">Debug using Chrome DevTools, check for overlappi...</p>
@@ -125,7 +127,7 @@
                             <h4 class="text-[#000000BF]">Deadline</h4>
                             <p class="font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
+                        <button class="completed-btn bg-[#3752FD] rounded-lg text-[#FFFFFF] p-3">Completed</button>
                     </div>
                 </div>
             </div>
@@ -136,17 +138,20 @@
                     <img src="pictures/activity.png" alt="">
                     <h1 class="text-[#00303C]">Activity Log</h1>
                 </div>
-                <button class="bg-[#3752FD] rounded-lg px-4 py-2 text-[#FFFFFF]">Clear History</button>
+                <button id="clear-history" class="bg-[#3752FD] rounded-lg px-4 py-2 text-[#FFFFFF]">Clear History</button>
             </div>
 
             <h1 class="text-[#3752FD33] my-4">------------------------------------------------------</h1>
 
-            <div class="mx-8">
-                <h1 class="bg-[#F4F7FF] rounded-lg p-3 text-[#000000BF]">You have Complete The Task Add Dark Mode at 12:48:15 PM</h1>
+            <div id="notification" class="mx-8">
+                <p class="bg-[#F4F7FF] rounded-lg p-3 text-[#000000BF]">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
             </div>
         </section>
     </section>
 
-    <script src=""></script>
+    <script src="./js/random-body-colors.js"></script>
+    <script src="./js/todays-date.js"></script>
+    <script src="./js/completed-btn.js"></script>
+    <script src="./js/clear-history-btn.js"></script>
 </body>
 </html>
